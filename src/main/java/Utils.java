@@ -1,5 +1,3 @@
-
-
 public class Utils {
 
     private static final String EMPTY = " ";
@@ -27,5 +25,29 @@ public class Utils {
                 }
             }
             return a;
+    }
+
+    public static double[][] determine(double A[][], int N, int i){
+        int j = i;
+        while (j<N) {
+            int q = 0;
+            while (q<i) {
+                A[i][j] -= A[i][q]*A[q][j];
+                q++;
+            }
+            j++;
+        }
+
+        j = i + 1;
+        while (j < N) {
+            int q = 0;
+            while (q<i) {
+                A[j][i] -= A[j][q]*A[q][i];
+                q++;
+            }
+            A[j][i] = A[j][i]/A[i][i];
+            j++;
+        }
+        return A;
     }
 }
