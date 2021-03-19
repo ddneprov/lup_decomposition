@@ -1,6 +1,4 @@
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 public class Main {
     public static void main(String[] args) {
         double[][] A = {{2, 7, 6, 2}, {9, 5, 1, 3}, {4, 3, 8, 4}, {5, 6, 7, 8}};
@@ -8,7 +6,6 @@ public class Main {
     }
 
     public static double[][] LUP_decomp(double[][] A) {
-        log.info("start");
         int N = A.length;
         double[][] P = Utils.createIdentetyMatrix(N);
         int exchanges = 0;
