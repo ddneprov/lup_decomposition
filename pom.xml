@@ -34,11 +34,5 @@
             <version>5.8.0-M1</version>
             <scope>test</scope>
         </dependency>
-
-
-
-
     </dependencies>
-
-
 </project>
