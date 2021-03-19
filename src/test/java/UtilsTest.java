@@ -13,6 +13,18 @@ public class UtilsTest {
         assertMatrixEquals(A, Utils.createIdentetyMatrix(3));
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
     void assertMatrixEquals(double[][] first, double[][] second) {
         for (int i = 0; i < first.length; i++) {
             Assertions.assertArrayEquals(first[i], second[i]);
