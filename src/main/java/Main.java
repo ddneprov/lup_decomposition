@@ -3,10 +3,10 @@ public class Main {
 
     public static void main(String[] args) {
         double[][] A = {{2, 7, 6, 2}, {9, 5, 1, 3}, {4, 3, 8, 4}, {5, 6, 7, 8}};
-        Utils.writeMatrix(LUP_decomp(A));
+        LUP_decomp(A, false);
     }
 
-    public static double[][] LUP_decomp(double[][] A) {
+    public static double[][] LUP_decomp(double[][] A, boolean isReturnP) {
         int N = A.length;
         double[][] P = Utils.createIdentetyMatrix(N);
         int exchanges = 0;
@@ -40,6 +40,14 @@ public class Main {
             }
             Utils.determine(A,N,i);
         }
-        return A;
+        outputResults(P, A);
+        return isReturnP ? P : A;
+    }
+
+    private static void outputResults(double [][] P, double [][] A){
+        System.out.println("P: ");
+        Utils.writeMatrix(P);
+        System.out.println("LU: ");
+        Utils.writeMatrix(A);
     }
 }
