@@ -5,5 +5,4 @@ The stability of LU decomposition is improved if pivoting is used to maximize th
 The function LUP_decomp(A,false) performs LU-decomposition with partial pivoting. It returns an object consisting of the LU matrix, the permutation matrix, and the number of row exchanges made during partial pivoting. LUP(A, true) returns P matrix
 
 
-
-![alt text](https://ibb.co/KDmn9N3 "Logo Title Text 1")
+![alt text](https://i.ibb.co/LrvKCQ2/2021-03-20-22-40-28.png)
