@@ -1,5 +1,6 @@
 
 public class Main {
+
     public static void main(String[] args) {
         double[][] A = {{2, 7, 6, 2}, {9, 5, 1, 3}, {4, 3, 8, 4}, {5, 6, 7, 8}};
         Utils.writeMatrix(LUP_decomp(A));
@@ -11,7 +12,6 @@ public class Main {
         int exchanges = 0;
 
         for (int i = 0; i < N; i++) {
-            //start pivot section
             int row = Integer.MIN_VALUE;
             double Umax = 0;
             for (int r = i; r < N; r++) {

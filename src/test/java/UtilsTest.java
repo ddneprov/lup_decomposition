@@ -13,6 +13,18 @@ public class UtilsTest {
         assertMatrixEquals(A, Utils.createIdentetyMatrix(3));
     }
 
+    @Test
+    public void test5x5() {
+        double[][] A = {
+                {1, 0, 0, 0, 0},
+                {0, 1, 0, 0, 0},
+                {0, 0, 1, 0, 0},
+                {0, 0, 0, 1, 0},
+                {0, 0, 0, 0, 1}
+        };
+        assertMatrixEquals(A, Utils.createIdentetyMatrix(5));
+    }
+
 
 
 
